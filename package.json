@@ -7,13 +7,13 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "build": "echo 'No build step required'"
+    "build": "echo 'No build step required'",
+    "vercel-build": "echo 'No build step required'"
   },
   "dependencies": {
     "dotenv": "^17.0.1",
     "express": "^4.21.2",
-    "lucide": "^0.525.0",
-    "nodemailer": "^7.0.4"
+    "lucide": "^0.525.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.0"

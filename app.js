@@ -2,7 +2,6 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { siteData } from './public/siteData.js';
-import { sendEmail } from './email-config.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public', {
   setHeaders: (res, path) => {
     if (path.endsWith('.js')) {
-      res.setHeader('Content-Type', 'application/javascript');
+      res.setHeader('Content-Type', 'text/javascript');
       // Prevent aggressive caching of JS modules during development
       res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
       res.setHeader('Pragma', 'no-cache');
@@ -37,77 +36,29 @@ app.get('/api/sitedata', (req, res) => {
   res.json(siteData);
 });
 
-// Email routes
-app.post('/api/contact', async (req, res) => {
-  try {
-    const result = await sendEmail('contact', req.body);
-
-    if (result.success) {
-      res.json({
-        success: true,
-        message: 'Thank you for your message! We will respond within 1 business day.'
-      });
-    } else {
-      res.status(500).json({
-        success: false,
-        message: 'Sorry, there was an error sending your message. Please call us directly.'
-      });
-    }
-  } catch (error) {
-    console.error('Contact form error:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Sorry, there was an error sending your message. Please call us directly.'
-    });
-  }
+// Demo form routes (no email functionality)
+app.post('/api/contact', (req, res) => {
+  console.log('Contact form submission:', req.body);
+  res.json({
+    success: true,
+    message: 'Demo: Thank you for your message! This is a demo site - no email will be sent.'
+  });
 });
 
-app.post('/api/referral', async (req, res) => {
-  try {
-    const result = await sendEmail('referral', req.body);
-
-    if (result.success) {
-      res.json({
-        success: true,
-        message: 'Referral submitted successfully! We will contact the patient within 1 business day and send you a confirmation.'
-      });
-    } else {
-      res.status(500).json({
-        success: false,
-        message: 'Sorry, there was an error submitting the referral. Please call us directly.'
-      });
-    }
-  } catch (error) {
-    console.error('Referral form error:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Sorry, there was an error submitting the referral. Please call us directly.'
-    });
-  }
+app.post('/api/referral', (req, res) => {
+  console.log('Referral form submission:', req.body);
+  res.json({
+    success: true,
+    message: 'Demo: Referral submitted successfully! This is a demo site - no email will be sent.'
+  });
 });
 
-app.post('/api/schedule', async (req, res) => {
-  try {
-    const result = await sendEmail('schedule', req.body);
-
-    if (result.success) {
-      res.json({
-        success: true,
-        message: 'Thank you for scheduling your appointment! We will contact you within 1 business day to confirm your visit.'
-      });
-    } else {
-      res.status(500).json({
-        success: false,
-        message: 'Sorry, there was an error scheduling your appointment. Please call us directly and we\'ll get you scheduled right away!'
-      });
-    }
-  } catch (error) {
-    console.error('Schedule form error:', error);
-    res.status(500).json({
-      success: false,
-      message: 'Sorry, there was an error scheduling your appointment. Please call us directly and we\'ll get you scheduled right away!'
-    });
-  }
+app.post('/api/schedule', (req, res) => {
+  console.log('Schedule form submission:', req.body);
+  res.json({
+    success: true,
+    message: 'Demo: Thank you for scheduling your appointment! This is a demo site - no email will be sent.'
+  });
 });
 
 // Catch-all handler: send back index.html for any non-API routes

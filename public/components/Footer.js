@@ -92,6 +92,9 @@ export function createFooter() {
             <p class="footer-copyright">
               © ${new Date().getFullYear()} Spark Orthodontics. All rights reserved.
             </p>
+            <p class="footer-demo-notice">
+              🚀 This is a demo website. Forms are for demonstration purposes only.
+            </p>
             <div class="footer-social">
               <a href="${contact.social.facebook.url}" 
                  class="footer-social-link" 
