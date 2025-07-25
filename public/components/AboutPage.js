@@ -5,9 +5,9 @@ export function createAboutPage() {
       <section class="about-hero">
         <div class="about-hero-container">
           <div class="about-hero-content">
-            <h1 class="about-page-title">About SPARK Orthodontics</h1>
+            <h1 class="about-page-title">About Spark Orthodontics</h1>
             <p class="about-page-description">
-              Founded with a passion for transforming smiles and lives, SPARK
+              Founded with a passion for transforming smiles and lives, Spark
               Orthodontics has been serving the community for over 15 years.
               Our practice combines the latest orthodontic technology with a
               personalized approach to care.
@@ -25,7 +25,7 @@ export function createAboutPage() {
                 Our Story
               </h2>
               <p class="about-story-text">
-                Founded with a passion for transforming smiles and lives, SPARK
+                Founded with a passion for transforming smiles and lives, Spark
                 Orthodontics has been serving the community for over 15 years.
                 Our practice combines the latest orthodontic technology with a
                 personalized approach to care.

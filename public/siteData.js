@@ -1,4 +1,4 @@
-// Site-wide data for SPARK Orthodontics
+// Site-wide data for Spark Orthodontics
 export const siteData = {
   // Contact Information
   contact: {
@@ -474,7 +474,7 @@ export const siteData = {
       {
         step: 4,
         title: 'Job Offer',
-        description: 'If selected, we\'ll extend an offer and welcome you to the SPARK Orthodontics family.',
+        description: 'If selected, we\'ll extend an offer and welcome you to the Spark Orthodontics family.',
         color: 'bg-accent-magenta'
       }
     ]

@@ -9,7 +9,7 @@ export function createReferralHero() {
           </div>
           
           <h1 class="referral-hero-title">
-            Partner with SPARK Orthodontics
+            Partner with Spark Orthodontics
           </h1>
           
           <p class="referral-hero-description">

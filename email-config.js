@@ -17,7 +17,7 @@ const createTransporter = () => {
 // Email templates
 const emailTemplates = {
   contact: {
-    subject: 'New Contact Form Submission - SPARK Orthodontics',
+    subject: 'New Contact Form Submission - Spark Orthodontics',
     getHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -37,7 +37,7 @@ const emailTemplates = {
         <div class="container">
           <div class="header">
             <h1>New Contact Form Submission</h1>
-            <p>SPARK Orthodontics</p>
+            <p>Spark Orthodontics</p>
           </div>
           <div class="content">
             <div class="info-row">
@@ -66,13 +66,13 @@ const emailTemplates = {
             </div>
           </div>
           <div class="footer">
-            <p>This message was sent from the SPARK Orthodontics contact form.</p>
+            <p>This message was sent from the Spark Orthodontics contact form.</p>
           </div>
         </div>
       </body>
       </html>
     `,
-    confirmationSubject: 'Thank you for contacting SPARK Orthodontics',
+    confirmationSubject: 'Thank you for contacting Spark Orthodontics',
     getConfirmationHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -95,7 +95,7 @@ const emailTemplates = {
           </div>
           <div class="content">
             <p>Dear ${data.firstName},</p>
-            <p>Thank you for contacting SPARK Orthodontics. We have successfully received your message and will respond within 1 business day.</p>
+            <p>Thank you for contacting Spark Orthodontics. We have successfully received your message and will respond within 1 business day.</p>
             
             <div class="contact-info">
               <h3>Contact Information</h3>
@@ -108,10 +108,10 @@ const emailTemplates = {
             <p>We look forward to helping you achieve your perfect smile!</p>
             
             <p>Best regards,<br>
-            The SPARK Orthodontics Team</p>
+            The Spark Orthodontics Team</p>
           </div>
           <div class="footer">
-            <p>SPARK Orthodontics | Creating Beautiful Smiles</p>
+            <p>Spark Orthodontics | Creating Beautiful Smiles</p>
           </div>
         </div>
       </body>
@@ -120,7 +120,7 @@ const emailTemplates = {
   },
 
   referral: {
-    subject: 'New Patient Referral - SPARK Orthodontics',
+    subject: 'New Patient Referral - Spark Orthodontics',
     getHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -143,7 +143,7 @@ const emailTemplates = {
         <div class="container">
           <div class="header">
             <h1>New Patient Referral</h1>
-            <p>SPARK Orthodontics</p>
+            <p>Spark Orthodontics</p>
           </div>
           <div class="content">
             ${data.urgency === 'emergency' || data.urgency === 'urgent' ?
@@ -221,13 +221,13 @@ const emailTemplates = {
             </div>
           </div>
           <div class="footer">
-            <p>This referral was submitted through the SPARK Orthodontics referral form.</p>
+            <p>This referral was submitted through the Spark Orthodontics referral form.</p>
           </div>
         </div>
       </body>
       </html>
     `,
-    confirmationSubject: 'Referral Submitted Successfully - SPARK Orthodontics',
+    confirmationSubject: 'Referral Submitted Successfully - Spark Orthodontics',
     getConfirmationHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -250,7 +250,7 @@ const emailTemplates = {
           </div>
           <div class="content">
             <p>Dear Dr. ${data.doctorName.split(' ').pop()},</p>
-            <p>Thank you for referring <strong>${data.patientFirstName} ${data.patientLastName}</strong> to SPARK Orthodontics.</p>
+            <p>Thank you for referring <strong>${data.patientFirstName} ${data.patientLastName}</strong> to Spark Orthodontics.</p>
             
             <div class="referral-summary">
               <h3>Referral Summary</h3>
@@ -266,13 +266,13 @@ const emailTemplates = {
               <li>A consultation report will be sent to you after the patient's visit</li>
             </ul>
             
-            <p>Thank you for trusting SPARK Orthodontics with your patient's care.</p>
+            <p>Thank you for trusting Spark Orthodontics with your patient's care.</p>
             
             <p>Best regards,<br>
             Dr. McFly and Team</p>
           </div>
           <div class="footer">
-            <p>SPARK Orthodontics | Professional Referral Network</p>
+            <p>Spark Orthodontics | Professional Referral Network</p>
           </div>
         </div>
       </body>
@@ -281,7 +281,7 @@ const emailTemplates = {
   },
 
   schedule: {
-    subject: 'New Appointment Request - SPARK Orthodontics',
+    subject: 'New Appointment Request - Spark Orthodontics',
     getHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -302,7 +302,7 @@ const emailTemplates = {
         <div class="container">
           <div class="header">
             <h1>New Appointment Request</h1>
-            <p>SPARK Orthodontics</p>
+            <p>Spark Orthodontics</p>
           </div>
           <div class="content">
             <div class="info-row">
@@ -348,13 +348,13 @@ const emailTemplates = {
             </div>
           </div>
           <div class="footer">
-            <p>This appointment request was submitted through the SPARK Orthodontics website.</p>
+            <p>This appointment request was submitted through the Spark Orthodontics website.</p>
           </div>
         </div>
       </body>
       </html>
     `,
-    confirmationSubject: 'SPARK Orthodontics - Appointment Request Received',
+    confirmationSubject: 'Spark Orthodontics - Appointment Request Received',
     getConfirmationHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -379,7 +379,7 @@ const emailTemplates = {
           </div>
           <div class="content">
             <p>Dear ${data.firstName},</p>
-            <p>Thank you for your appointment request with SPARK Orthodontics. We have received your information and will contact you within 1 business day to confirm your appointment time.</p>
+            <p>Thank you for your appointment request with Spark Orthodontics. We have received your information and will contact you within 1 business day to confirm your appointment time.</p>
             
             <div class="priority-note">
               <strong>⏰ Quick Response Guaranteed</strong><br>
@@ -405,13 +405,13 @@ const emailTemplates = {
               </p>
             </div>
             
-            <p>We appreciate you choosing SPARK Orthodontics for your orthodontic care and look forward to seeing you soon.</p>
+            <p>We appreciate you choosing Spark Orthodontics for your orthodontic care and look forward to seeing you soon.</p>
             
             <p>Best regards,<br>
-            The SPARK Orthodontics Team</p>
+            The Spark Orthodontics Team</p>
           </div>
           <div class="footer">
-            <p>SPARK Orthodontics | Excellence in Orthodontic Care</p>
+            <p>Spark Orthodontics | Excellence in Orthodontic Care</p>
           </div>
         </div>
       </body>

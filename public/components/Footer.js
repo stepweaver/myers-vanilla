@@ -13,7 +13,7 @@ export function createFooter() {
             <div class="footer-brand">
               <div class="footer-brand-identity">
                 ${createLogo('footer-logo')}
-                <h2 class="footer-brand-name">SPARK Orthodontics</h2>
+                <h2 class="footer-brand-name">Spark Orthodontics</h2>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export function createFooter() {
         <div class="footer-bottom">
           <div class="footer-bottom-content">
             <p class="footer-copyright">
-              © ${new Date().getFullYear()} SPARK Orthodontics. All rights reserved.
+              © ${new Date().getFullYear()} Spark Orthodontics. All rights reserved.
             </p>
             <div class="footer-social">
               <a href="${contact.social.facebook.url}" 

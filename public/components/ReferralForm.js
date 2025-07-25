@@ -7,7 +7,7 @@ export function createReferralForm() {
         <div class="referral-form-header">
           <h2 class="referral-form-title">Submit a Patient Referral</h2>
           <p class="referral-form-description">
-            Please complete this form to refer a patient to SPARK Orthodontics. 
+            Please complete this form to refer a patient to Spark Orthodontics. 
             All information is kept confidential and secure.
           </p>
         </div>

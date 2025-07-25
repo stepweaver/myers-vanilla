@@ -1,6 +1,6 @@
-# SPARK Orthodontics Website
+# Spark Orthodontics Website
 
-A modern, responsive website for SPARK Orthodontics built with vanilla JavaScript, Express.js, and Nodemailer for email functionality.
+A modern, responsive website for Spark Orthodontics built with vanilla JavaScript, Express.js, and Nodemailer for email functionality.
 
 ## Features
 
@@ -89,7 +89,7 @@ If you have Google Workspace (visible in your Google Admin Console):
 2. Enable 2-Factor Authentication if not already enabled
 3. Go to [App Passwords](https://myaccount.google.com/apppasswords)
 4. Select "Mail" and "Other (custom name)"
-5. Enter "SPARK Orthodontics Website" as the name
+5. Enter "Spark Orthodontics Website" as the name
 6. Copy the 16-character password generated
 
 #### Option B: Personal Gmail
@@ -98,7 +98,7 @@ If you have Google Workspace (visible in your Google Admin Console):
 2. Enable 2-Factor Authentication if not already enabled
 3. Go to [App Passwords](https://myaccount.google.com/apppasswords)
 4. Select "Mail" and "Other (custom name)"
-5. Enter "SPARK Orthodontics Website" as the name
+5. Enter "Spark Orthodontics Website" as the name
 6. Copy the 16-character password generated
 
 #### For Other Providers:
@@ -338,7 +338,7 @@ For technical support or questions about the email setup:
 
 ## License
 
-This project is proprietary software developed for SPARK Orthodontics.
+This project is proprietary software developed for Spark Orthodontics.
 
 ---
 
