@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public', {
   setHeaders: (res, path) => {
     if (path.endsWith('.js')) {
-      res.setHeader('Content-Type', 'text/javascript');
+      res.setHeader('Content-Type', 'application/javascript');
       // Prevent aggressive caching of JS modules during development
       res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
       res.setHeader('Pragma', 'no-cache');
