@@ -314,11 +314,14 @@
 
 .footer-credit-text {
   font-size: 0.875rem;
+  color: #6b7280;
 }
 
 .footer-credit-logo {
-  height: 2rem;
-  width: auto;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #9ca3af;
+  font-family: var(--font-montserrat);
 }
 
 /* Focus states for accessibility */

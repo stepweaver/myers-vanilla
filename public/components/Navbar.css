@@ -28,11 +28,17 @@
 .navbar-brand a {
   font-family: var(--font-montserrat);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--color-primary-black);
   text-decoration: none;
   cursor: pointer;
   transition: color 0.15s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand a {
+    font-size: 1.5rem;
+  }
 }
 
 .navbar-brand a:hover {
@@ -40,7 +46,7 @@
 }
 
 .navbar-brand .logo.navbar-logo {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 

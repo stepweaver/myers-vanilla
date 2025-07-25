@@ -1,3 +1,5 @@
+import { createLogo } from './Logo.js';
+
 let isOpen = false;
 
 const navigationItems = [
@@ -46,7 +48,7 @@ export function createMobileNav() {
         <!-- Header -->
         <div class="mobile-nav-header">
           <div class="mobile-nav-logo">
-            <div class="logo-text">M | O</div>
+            <div class="logo-text">L | O</div>
             <a href="/" class="brand-text" data-route="/">
               Lambda Orthodontics
             </a>
