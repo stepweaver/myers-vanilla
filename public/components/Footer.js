@@ -13,7 +13,7 @@ export function createFooter() {
             <div class="footer-brand">
               <div class="footer-brand-identity">
                 ${createLogo('footer-logo')}
-                <h2 class="footer-brand-name">Spark Orthodontics</h2>
+                <h2 class="footer-brand-name">Lambda Orthodontics</h2>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export function createFooter() {
         <div class="footer-bottom">
           <div class="footer-bottom-content">
             <p class="footer-copyright">
-              © ${new Date().getFullYear()} Spark Orthodontics. All rights reserved.
+              © ${new Date().getFullYear()} Lambda Orthodontics. All rights reserved.
             </p>
             <p class="footer-demo-notice">
               🚀 This is a demo website. Forms are for demonstration purposes only.
@@ -125,16 +125,14 @@ export function createFooter() {
             </div>
           </div>
 
-          <!-- Hero Point Consulting Credit -->
+          <!-- λstepweaver Credit -->
           <div class="footer-credit">
-            <a href="https://heropointconsulting.com" 
+            <a href="https://stepweaver.dev" 
                target="_blank" 
                rel="noopener noreferrer"
                class="footer-credit-link">
               <span class="footer-credit-text">Designed By</span>
-              <img src="/images/hpc_design.png" 
-                   alt="Hero Point Consulting" 
-                   class="footer-credit-logo" />
+              <span class="footer-credit-logo">λstepweaver</span>
             </a>
           </div>
         </div>

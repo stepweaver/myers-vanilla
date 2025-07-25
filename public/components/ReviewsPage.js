@@ -12,7 +12,7 @@ export function createReviewsPage() {
             </h1>
             <p class="reviews-hero-description">
               Hear from our patients about their orthodontic journey and
-              transformation at Spark Orthodontics.
+              transformation at Lambda Orthodontics.
             </p>
             <div class="reviews-hero-rating">
               <div class="reviews-stars">
@@ -37,7 +37,7 @@ export function createReviewsPage() {
         <div class="reviews-stats-container">
           <div class="reviews-stats-header">
             <h2 class="reviews-stats-title">
-              Why Patients Love Spark Orthodontics
+              Why Patients Love Lambda Orthodontics
             </h2>
           </div>
 
@@ -154,7 +154,7 @@ export function createReviewsPage() {
             Ready to Join Our Happy Patients?
           </h2>
           <p class="reviews-cta-description">
-            Experience the Spark Orthodontics difference for yourself. Schedule
+            Experience the Lambda Orthodontics difference for yourself. Schedule
             your free consultation today.
           </p>
           <a href="/schedule" class="reviews-cta-button" data-route="/schedule">

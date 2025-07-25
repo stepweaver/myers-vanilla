@@ -1,7 +1,7 @@
 export function createLogo(className = '') {
   return `
     <a href="/" class="logo ${className}">
-      S&nbsp;|&nbsp;O
+      L&nbsp;|&nbsp;O
     </a>
   `;
 }

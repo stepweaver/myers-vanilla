@@ -57,7 +57,7 @@ export function createNavbar() {
         <div class="navbar-content">
           <div class="navbar-brand">
             ${createLogo('navbar-logo')}
-            <a href="/">Spark Orthodontics</a>
+            <a href="/">Lambda Orthodontics</a>
           </div>
 
           <!-- Desktop Navigation -->

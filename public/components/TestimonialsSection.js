@@ -44,7 +44,7 @@ export function createTestimonialsSection() {
           </h2>
           <p class="testimonials-subtitle">
             Real stories from real patients who have transformed their smiles
-            with Spark Orthodontics.
+            with Lambda Orthodontics.
           </p>
         </div>
 

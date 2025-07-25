@@ -48,7 +48,7 @@ export function createContactPage() {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Spark Orthodontics Office Location"
+                title="Lambda Orthodontics Office Location"
               ></iframe>
             </div>
 

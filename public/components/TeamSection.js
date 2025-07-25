@@ -69,7 +69,7 @@ export function createTeamSection() {
               </h3>
               <p class="team-join-description">
                 We're always looking for talented, compassionate individuals to
-                join our team. At Spark Orthodontics, we value:
+                join our team. At Lambda Orthodontics, we value:
               </p>
               <ul class="team-join-list">
                 <li class="team-join-item">

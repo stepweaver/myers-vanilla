@@ -155,8 +155,8 @@ export function createContactForm() {
                 </div>
                 <div class="contact-info-content">
                   <h4 class="contact-info-label">Email</h4>
-                  <a href="mailto:info@sparkortho.com" class="contact-info-link">
-                    info@sparkortho.com
+                  <a href="mailto:info@lambdaortho.com" class="contact-info-link">
+                    info@lambdaortho.com
                   </a>
                 </div>
               </div>

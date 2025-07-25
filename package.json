@@ -1,7 +1,7 @@
 {
   "name": "spark-orthodontics-website",
   "version": "1.0.0",
-  "description": "Modern responsive website for Spark Orthodontics",
+  "description": "Modern responsive website for Lambda Orthodontics",
   "main": "app.js",
   "type": "module",
   "scripts": {

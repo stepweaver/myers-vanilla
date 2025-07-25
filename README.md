@@ -1,6 +1,6 @@
-# Spark Orthodontics Website - Demo
+# Lambda Orthodontics Website - Demo
 
-A modern, responsive demo website for Spark Orthodontics built with vanilla JavaScript and Express.js.
+A modern, responsive demo website for Lambda Orthodontics built with vanilla JavaScript and Express.js.
 
 ## Features
 

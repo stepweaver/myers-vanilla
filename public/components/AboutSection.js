@@ -9,7 +9,7 @@ export function createAboutSection() {
               From Our Family to Yours
             </h2>
             <p class="about-text">
-              At Spark Orthodontics, we believe in creating beautiful smiles
+              At Lambda Orthodontics, we believe in creating beautiful smiles
               that last a lifetime. Led by our experienced orthodontists Dr.
               Marty McFly and Dr. Elle Woods, our practice combines
               clinical excellence with a warm, welcoming atmosphere.

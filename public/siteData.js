@@ -1,4 +1,4 @@
-// Site-wide data for Spark Orthodontics
+// Site-wide data for Lambda Orthodontics
 export const siteData = {
   // Contact Information
   contact: {
@@ -15,8 +15,8 @@ export const siteData = {
       link: 'tel:+19515550123'
     },
     email: {
-      main: 'info@sparkortho.com',
-      referrals: 'referrals@sparkortho.com'
+      main: 'info@lambdaortho.com',
+      referrals: 'referrals@lambdaortho.com'
     },
     hours: {
       mondayThursday: '8:00 AM - 5:00 PM',
@@ -26,19 +26,19 @@ export const siteData = {
     },
     social: {
       facebook: {
-        url: 'https://facebook.com/sparkorthodontics',
+        url: 'https://facebook.com/lambdaorthodontics',
         label: 'Facebook'
       },
       instagram: {
-        url: 'https://instagram.com/sparkorthodontics',
+        url: 'https://instagram.com/lambdaorthodontics',
         label: 'Instagram'
       },
       twitter: {
-        url: 'https://twitter.com/sparkortho',
+        url: 'https://twitter.com/lambdaortho',
         label: 'X (formerly Twitter)'
       },
       youtube: {
-        url: 'https://youtube.com/@sparkorthodontics',
+        url: 'https://youtube.com/@lambdaorthodontics',
         label: 'YouTube'
       }
     }
@@ -474,7 +474,7 @@ export const siteData = {
       {
         step: 4,
         title: 'Job Offer',
-        description: 'If selected, we\'ll extend an offer and welcome you to the Spark Orthodontics family.',
+        description: 'If selected, we\'ll extend an offer and welcome you to the Lambda Orthodontics family.',
         color: 'bg-accent-magenta'
       }
     ]
