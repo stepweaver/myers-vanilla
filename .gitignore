@@ -11,8 +11,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# Vercel
+# Deployment
 .vercel
+.railway
 
 # Logs
 logs
