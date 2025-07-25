@@ -34,19 +34,19 @@ export function createWhyReferSection() {
 
   const testimonials = [
     {
-      quote: "Myers Orthodontics has been our go-to referral for complex orthodontic cases. Their communication is excellent and our patients always receive outstanding care.",
+      quote: "SPARK Orthodontics has been our go-to referral for complex orthodontic cases. Their communication is excellent and our patients always receive outstanding care.",
       author: "Dr. Sarah Johnson",
-      practice: "Noblesville Family Dentistry"
+      practice: "Corona Dental Group"
     },
     {
-      quote: "The detailed progress reports and professional collaboration make referring patients to Myers Orthodontics a seamless process for our practice.",
+      quote: "The detailed progress reports and professional collaboration make referring patients to SPARK Orthodontics a seamless process for our practice.",
       author: "Dr. Michael Chen",
-      practice: "Westfield Dental Group"
+      practice: "Moreno Valley Complete Dentistry"
     },
     {
-      quote: "Our patients consistently return with beautiful smiles and positive experiences. We trust Myers Orthodontics with our most valued patients.",
+      quote: "Our patients consistently return with beautiful smiles and positive experiences. We trust SPARK Orthodontics with our most valued patients.",
       author: "Dr. Jennifer Rodriguez",
-      practice: "Fishers Complete Dentistry"
+      practice: "Riverside Family Dentistry"
     }
   ];
 
@@ -55,7 +55,7 @@ export function createWhyReferSection() {
       <div class="why-refer-container">
         <!-- Header -->
         <div class="why-refer-header">
-          <h2 class="why-refer-title">Why Choose Myers Orthodontics</h2>
+          <h2 class="why-refer-title">Why Choose SPARK Orthodontics</h2>
           <p class="why-refer-description">
             We make referring patients easy with professional collaboration, 
             advanced care, and exceptional patient experiences.

@@ -7,7 +7,7 @@ export function createReferralForm() {
         <div class="referral-form-header">
           <h2 class="referral-form-title">Submit a Patient Referral</h2>
           <p class="referral-form-description">
-            Please complete this form to refer a patient to Myers Orthodontics. 
+            Please complete this form to refer a patient to SPARK Orthodontics. 
             All information is kept confidential and secure.
           </p>
         </div>
@@ -314,7 +314,7 @@ async function handleReferralSubmit(e) {
   } catch (error) {
     console.error('Referral form error:', error);
     // Show error message
-    alert('Sorry, there was an error submitting the referral. Please call us directly at (317) 289-1750.');
+    alert('Sorry, there was an error submitting the referral. Please call us directly at (951) 555-0123.');
   } finally {
     // Reset button
     submitBtn.disabled = false;

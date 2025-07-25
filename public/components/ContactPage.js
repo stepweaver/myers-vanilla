@@ -33,7 +33,7 @@ export function createContactPage() {
               Visit Our Office
             </h2>
             <p class="contact-location-description">
-              Conveniently located in Noblesville with easy access and parking.
+              Conveniently located in Riverside with easy access and parking.
             </p>
           </div>
 
@@ -41,14 +41,14 @@ export function createContactPage() {
             <!-- Interactive Map -->
             <div class="contact-map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.8674433066806!2d-85.97844842342877!3d39.9999616711842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8814b7b3e3c3c3c3%3A0x0!2s14540%20Prairie%20Lakes%20Blvd%20N%2C%20Noblesville%2C%20IN%2046060!5e0!3m2!1sen!2sus!4v1640995200000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.1234567890123!2d-117.396156!3d33.953348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcae5c5c5c5c5c%3A0x5c5c5c5c5c5c5c5c!2s1234%20Sunshine%20Blvd%2C%20Riverside%2C%20CA%2092501!5e0!3m2!1sen!2sus!4v1640995200000!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style="border: 0;"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Myers Orthodontics Office Location"
+                title="SPARK Orthodontics Office Location"
               ></iframe>
             </div>
 

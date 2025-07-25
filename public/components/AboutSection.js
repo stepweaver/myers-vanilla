@@ -9,9 +9,9 @@ export function createAboutSection() {
               From Our Family to Yours
             </h2>
             <p class="about-text">
-              At Myers Orthodontics, we believe in creating beautiful smiles
-              through personalized care and advanced technology. Founded by Dr.
-              Michael Myers and Dr. Kennedy Myers, our practice combines
+              At SPARK Orthodontics, we believe in creating beautiful smiles
+              that last a lifetime. Led by our experienced orthodontists Dr.
+              Marty McFly and Dr. Elle Woods, our practice combines
               clinical excellence with a warm, welcoming atmosphere.
             </p>
             <p class="about-text">
@@ -34,7 +34,7 @@ export function createAboutSection() {
             <div class="about-image-wrapper">
               <img
                 src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=80"
-                alt="Dr. Michael Myers with patient"
+                alt="Dr. Marty McFly with patient"
                 class="about-image"
               />
             </div>
@@ -44,7 +44,7 @@ export function createAboutSection() {
                   <i data-lucide="play" class="about-play-icon"></i>
                 </div>
                 <p class="about-play-text">
-                  Watch Dr. Myers' Story
+                  Watch Dr. McFly's Story
                 </p>
               </div>
             </div>

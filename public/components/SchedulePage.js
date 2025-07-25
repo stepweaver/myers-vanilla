@@ -314,7 +314,7 @@ export function initSchedulePage() {
       } catch (error) {
         console.error('Schedule form error:', error);
         // Show error message
-        alert('Sorry, there was an error scheduling your appointment. Please call us directly at (317) 289-1750 and we\'ll get you scheduled right away!');
+        alert('Sorry, there was an error scheduling your appointment. Please call us directly at (951) 555-0123 and we\'ll get you scheduled right away!');
       }
     });
   }

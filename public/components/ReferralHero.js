@@ -9,7 +9,7 @@ export function createReferralHero() {
           </div>
           
           <h1 class="referral-hero-title">
-            Partner with Myers Orthodontics
+            Partner with SPARK Orthodontics
           </h1>
           
           <p class="referral-hero-description">
@@ -47,7 +47,7 @@ export function createReferralHero() {
           <div class="referral-hero-image-container">
             <img 
               src="/images/myers_hero_doctor.png" 
-              alt="Dr. Myers consulting with dental professionals"
+              alt="Dr. McFly consulting with dental professionals"
               class="referral-hero-img"
             />
             <div class="referral-hero-image-overlay">

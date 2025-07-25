@@ -57,7 +57,7 @@ export function createNavbar() {
         <div class="navbar-content">
           <div class="navbar-brand">
             ${createLogo('navbar-logo')}
-            <a href="/">Myers Orthodontics</a>
+            <a href="/">SPARK Orthodontics</a>
           </div>
 
           <!-- Desktop Navigation -->
@@ -115,13 +115,13 @@ export { updateNavbarActiveState };
 
 function toggleMobileMenu() {
   isMobileMenuOpen = !isMobileMenuOpen;
-  
+
   if (isMobileMenuOpen) {
     openMobileNav();
   } else {
     closeMobileNav();
   }
-  
+
   // Update the mobile nav display
   updateMobileNavDisplay();
 }

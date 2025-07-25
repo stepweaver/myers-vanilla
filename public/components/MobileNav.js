@@ -48,7 +48,7 @@ export function createMobileNav() {
           <div class="mobile-nav-logo">
             <div class="logo-text">M | O</div>
             <a href="/" class="brand-text" data-route="/">
-              Myers Orthodontics
+              SPARK Orthodontics
             </a>
           </div>
 

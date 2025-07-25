@@ -256,7 +256,7 @@ export function createPatientPortalPage() {
                 </p>
                 <div class="support-phone bg-accent-lime-green text-primary-white py-3 px-4 rounded-lg inline-block">
                   <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
-                  <span class="font-semibold text-lg">(317) 289-1750</span>
+                  <span class="font-semibold text-lg">(951) 555-0123</span>
                 </div>
               </div>
               
@@ -417,7 +417,7 @@ export function createPatientPortalPage() {
                 name="phone"
                 required
                 class="form-input w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-transparent"
-                placeholder="(317) 289-1750"
+                placeholder="(951) 555-0123"
               />
             </div>
 

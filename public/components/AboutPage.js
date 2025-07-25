@@ -5,13 +5,12 @@ export function createAboutPage() {
       <section class="about-hero">
         <div class="about-hero-container">
           <div class="about-hero-content">
-            <h1 class="about-hero-title">
-              About Myers Orthodontics
-            </h1>
-            <p class="about-hero-description">
-              Dedicated to creating beautiful, healthy smiles through
-              personalized orthodontic care and cutting-edge treatment
-              techniques.
+            <h1 class="about-page-title">About SPARK Orthodontics</h1>
+            <p class="about-page-description">
+              Founded with a passion for transforming smiles and lives, SPARK
+              Orthodontics has been serving the community for over 15 years.
+              Our practice combines the latest orthodontic technology with a
+              personalized approach to care.
             </p>
           </div>
         </div>
@@ -26,7 +25,7 @@ export function createAboutPage() {
                 Our Story
               </h2>
               <p class="about-story-text">
-                Founded with a passion for transforming smiles and lives, Myers
+                Founded with a passion for transforming smiles and lives, SPARK
                 Orthodontics has been serving the community for over 15 years.
                 Our practice combines the latest orthodontic technology with a
                 personalized approach to care.

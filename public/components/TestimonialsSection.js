@@ -3,7 +3,7 @@ const testimonials = [
     id: 1,
     name: 'Sarah Johnson',
     rating: 5,
-    text: 'Dr. Myers and the team provided exceptional care throughout my treatment. The results exceeded my expectations!',
+    text: 'Dr. McFly and the team provided exceptional care throughout my treatment. The results exceeded my expectations!',
     treatment: 'Invisalign',
   },
   {
@@ -44,7 +44,7 @@ export function createTestimonialsSection() {
           </h2>
           <p class="testimonials-subtitle">
             Real stories from real patients who have transformed their smiles
-            with Myers Orthodontics.
+            with SPARK Orthodontics.
           </p>
         </div>
 

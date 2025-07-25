@@ -127,7 +127,7 @@ export function createContactForm() {
                 <i data-lucide="alert-circle" class="contact-form-error-icon"></i>
                 <h3 class="contact-form-error-title">Oops! Something went wrong</h3>
                 <p class="contact-form-error-text">
-                  Please try again or call us directly at <a href="tel:+13172891750">(317) 289-1750</a>.
+                  Please try again or call us directly at <a href="tel:+19515550123">(951) 555-0123</a>.
                 </p>
               </div>
             </div>
@@ -143,8 +143,8 @@ export function createContactForm() {
                 </div>
                 <div class="contact-info-content">
                   <h4 class="contact-info-label">Phone</h4>
-                  <a href="tel:+13172891750" class="contact-info-link">
-                    (317) 289-1750
+                  <a href="tel:+19515550123" class="contact-info-link">
+                    (951) 555-0123
                   </a>
                 </div>
               </div>
@@ -155,8 +155,8 @@ export function createContactForm() {
                 </div>
                 <div class="contact-info-content">
                   <h4 class="contact-info-label">Email</h4>
-                  <a href="mailto:info@myersortho.com" class="contact-info-link">
-                    info@myersortho.com
+                  <a href="mailto:info@sparkortho.com" class="contact-info-link">
+                    info@sparkortho.com
                   </a>
                 </div>
               </div>

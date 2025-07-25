@@ -1,22 +1,22 @@
-// Site-wide data for Myers Orthodontics
+// Site-wide data for SPARK Orthodontics
 export const siteData = {
   // Contact Information
   contact: {
     address: {
-      street: '14540 Prairie Lakes Blvd N, STE 205',
-      city: 'Noblesville',
-      state: 'IN',
-      zip: '46060-4370',
-      full: '14540 Prairie Lakes Blvd N, STE 205\nNoblesville, IN 46060-4370'
+      street: '1234 Sunshine Blvd, STE 300',
+      city: 'Riverside',
+      state: 'CA',
+      zip: '92501-1234',
+      full: '1234 Sunshine Blvd, STE 300\nRiverside, CA 92501-1234'
     },
     phone: {
-      main: '317-289-1750',
-      formatted: '(317) 289-1750',
-      link: 'tel:+13172891750'
+      main: '951-555-0123',
+      formatted: '(951) 555-0123',
+      link: 'tel:+19515550123'
     },
     email: {
-      main: 'info@myersortho.com',
-      referrals: 'referrals@myersortho.com'
+      main: 'info@sparkortho.com',
+      referrals: 'referrals@sparkortho.com'
     },
     hours: {
       mondayThursday: '8:00 AM - 5:00 PM',
@@ -26,19 +26,19 @@ export const siteData = {
     },
     social: {
       facebook: {
-        url: 'https://facebook.com/myersorthodontics',
+        url: 'https://facebook.com/sparkorthodontics',
         label: 'Facebook'
       },
       instagram: {
-        url: 'https://instagram.com/myersorthodontics',
+        url: 'https://instagram.com/sparkorthodontics',
         label: 'Instagram'
       },
       twitter: {
-        url: 'https://twitter.com/myersortho',
+        url: 'https://twitter.com/sparkortho',
         label: 'X (formerly Twitter)'
       },
       youtube: {
-        url: 'https://youtube.com/@myersorthodontics',
+        url: 'https://youtube.com/@sparkorthodontics',
         label: 'YouTube'
       }
     }
@@ -255,16 +255,16 @@ export const siteData = {
     members: [
       {
         id: 1,
-        name: 'Dr. Michael Myers',
+        name: 'Dr. Marty McFly',
         title: 'Lead Orthodontist',
-        bio: 'Dr. Myers has over 15 years of experience in orthodontics and is passionate about creating beautiful, healthy smiles.',
+        bio: 'Dr. McFly has over 15 years of experience in orthodontics and is passionate about creating beautiful, healthy smiles.',
         credentials: 'DDS, MS Orthodontics',
         image: '/api/placeholder/300/400',
         icon: 'Stethoscope',
       },
       {
         id: 2,
-        name: 'Dr. Kennedy Myers',
+        name: 'Dr. Elle Woods',
         title: 'Lead Orthodontist',
         bio: 'Specializing in adult orthodontics and clear aligner therapy with a focus on aesthetic outcomes.',
         credentials: 'DDS, MS Orthodontics',
@@ -273,36 +273,36 @@ export const siteData = {
       },
       {
         id: 3,
-        name: 'Jennifer Rodriguez',
+        name: 'Cher Horowitz',
         title: 'Office Manager',
-        bio: 'Jennifer ensures smooth operations and exceptional patient care from consultation to treatment completion.',
+        bio: 'Cher ensures smooth operations and exceptional patient care from consultation to treatment completion.',
         credentials: 'RDA, Practice Management',
         image: '/api/placeholder/300/400',
         icon: 'Briefcase',
       },
       {
         id: 4,
-        name: 'Amanda Johnson',
+        name: 'Danny Zuko',
         title: 'Lead Dental Assistant',
-        bio: 'Amanda brings expertise in chairside assistance and patient education to ensure comfort during treatment.',
+        bio: 'Danny brings expertise in chairside assistance and patient education to ensure comfort during treatment.',
         credentials: 'RDA, Expanded Functions',
         image: '/api/placeholder/300/400',
         icon: 'Heart',
       },
       {
         id: 5,
-        name: 'Kevin Park',
+        name: 'Ferris Bueller',
         title: 'Treatment Coordinator',
-        bio: 'Kevin helps patients understand their treatment options and coordinates insurance and financing.',
+        bio: 'Ferris helps patients understand their treatment options and coordinates insurance and financing.',
         credentials: 'Insurance Specialist',
         image: '/api/placeholder/300/400',
         icon: 'Calendar',
       },
       {
         id: 6,
-        name: 'Lisa Thompson',
+        name: 'Sandy Olsson',
         title: 'Dental Hygienist',
-        bio: 'Lisa provides comprehensive hygiene care and education to maintain optimal oral health during treatment.',
+        bio: 'Sandy provides comprehensive hygiene care and education to maintain optimal oral health during treatment.',
         credentials: 'RDH, Local Anesthesia',
         image: '/api/placeholder/300/400',
         icon: 'Sparkles',
@@ -474,7 +474,7 @@ export const siteData = {
       {
         step: 4,
         title: 'Job Offer',
-        description: 'If selected, we\'ll extend an offer and welcome you to the Myers Orthodontics family.',
+        description: 'If selected, we\'ll extend an offer and welcome you to the SPARK Orthodontics family.',
         color: 'bg-accent-magenta'
       }
     ]

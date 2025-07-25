@@ -1,6 +1,6 @@
-# Myers Orthodontics Website
+# SPARK Orthodontics Website
 
-A modern, responsive website for Myers Orthodontics built with vanilla JavaScript, Express.js, and Nodemailer for email functionality.
+A modern, responsive website for SPARK Orthodontics built with vanilla JavaScript, Express.js, and Nodemailer for email functionality.
 
 ## Features
 
@@ -36,7 +36,7 @@ Each form sends two emails:
 
    ```bash
    git clone <repository-url>
-   cd myers-vanilla
+   cd spark-vanilla
    ```
 
 2. **Install dependencies**
@@ -79,8 +79,8 @@ If you have Google Workspace (visible in your Google Admin Console):
 2. Navigate to **Directory** → **Users**
 3. Click **"Create an alternate email address"** (as shown in your screenshot)
 4. Create these addresses:
-   - `info@stepweaver.dev` (for receiving form submissions)
-   - `noreply@stepweaver.dev` (for sending notifications)
+   - `info@yourdomain.com` (for receiving form submissions)
+   - `noreply@yourdomain.com` (for sending notifications)
    - Or use your existing workspace email for both
 
 **Generate App Password:**
@@ -89,7 +89,7 @@ If you have Google Workspace (visible in your Google Admin Console):
 2. Enable 2-Factor Authentication if not already enabled
 3. Go to [App Passwords](https://myaccount.google.com/apppasswords)
 4. Select "Mail" and "Other (custom name)"
-5. Enter "Myers Orthodontics Website" as the name
+5. Enter "SPARK Orthodontics Website" as the name
 6. Copy the 16-character password generated
 
 #### Option B: Personal Gmail
@@ -98,7 +98,7 @@ If you have Google Workspace (visible in your Google Admin Console):
 2. Enable 2-Factor Authentication if not already enabled
 3. Go to [App Passwords](https://myaccount.google.com/apppasswords)
 4. Select "Mail" and "Other (custom name)"
-5. Enter "Myers Orthodontics Website" as the name
+5. Enter "SPARK Orthodontics Website" as the name
 6. Copy the 16-character password generated
 
 #### For Other Providers:
@@ -187,7 +187,7 @@ Form styles are in the corresponding CSS files and follow the schedule-form-card
 ## Project Structure
 
 ```
-myers-vanilla/
+spark-vanilla/
 ├── public/
 │   ├── components/          # Reusable UI components
 │   ├── images/             # Static images
@@ -234,7 +234,7 @@ myers-vanilla/
 - Verify all email addresses in your .env file actually exist
 - For Google Workspace: Create alternate email addresses in Admin Console first
 - Don't use fake or non-existent email addresses for EMAIL_FROM or EMAIL_TO
-- Example: `myers.stephen@stepweaver.dev` must be created in your Google Workspace first
+- Example: `info@yourdomain.com` must be created in your Google Workspace first
 
 **Emails not being received**
 
@@ -302,28 +302,25 @@ For production, consider using dedicated email services:
 - Validate and sanitize all form inputs
 - Use HTTPS in production
 
-## Google Workspace Quick Setup for stepweaver.dev
-
-Based on your Google Workspace Admin Console screenshot:
+## Quick Setup Example
 
 1. **Create Email Addresses** (to fix the "address not found" error):
 
    - Go to [admin.google.com](https://admin.google.com)
    - Navigate to **Directory** → **Users**
-   - Click **"Create an alternate email address"** (blue button in your screenshot)
+   - Click **"Create an alternate email address"**
    - Create these addresses:
-     - `myers.stephen@stepweaver.dev` (if not already exists)
-     - `info@stepweaver.dev` (for receiving form submissions)
-     - `noreply@stepweaver.dev` (for sending notifications)
+     - `info@yourdomain.com` (for receiving form submissions)
+     - `noreply@yourdomain.com` (for sending notifications)
 
 2. **Update your .env file**:
 
    ```env
    EMAIL_SERVICE=gmail
-   EMAIL_USER=myers.stephen@stepweaver.dev
+   EMAIL_USER=your-email@yourdomain.com
    EMAIL_APP_PASSWORD=your-16-char-app-password
-   EMAIL_TO=info@stepweaver.dev
-   EMAIL_FROM=noreply@stepweaver.dev
+   EMAIL_TO=info@yourdomain.com
+   EMAIL_FROM=noreply@yourdomain.com
    ```
 
 3. **Restart your server** and test - No more "address not found" errors!
@@ -341,7 +338,7 @@ For technical support or questions about the email setup:
 
 ## License
 
-This project is proprietary software developed for Myers Orthodontics.
+This project is proprietary software developed for SPARK Orthodontics.
 
 ---
 

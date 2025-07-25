@@ -1,7 +1,7 @@
 {
-  "name": "vanilla-express-app",
+  "name": "spark-orthodontics-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Modern responsive website for SPARK Orthodontics",
   "main": "app.js",
   "type": "module",
   "scripts": {

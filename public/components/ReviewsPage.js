@@ -12,7 +12,7 @@ export function createReviewsPage() {
             </h1>
             <p class="reviews-hero-description">
               Hear from our patients about their orthodontic journey and
-              transformation at Myers Orthodontics.
+              transformation at SPARK Orthodontics.
             </p>
             <div class="reviews-hero-rating">
               <div class="reviews-stars">
@@ -37,7 +37,7 @@ export function createReviewsPage() {
         <div class="reviews-stats-container">
           <div class="reviews-stats-header">
             <h2 class="reviews-stats-title">
-              Why Patients Love Myers Orthodontics
+              Why Patients Love SPARK Orthodontics
             </h2>
           </div>
 
@@ -113,7 +113,7 @@ export function createReviewsPage() {
               Read Our Google Reviews
             </h2>
             <p class="reviews-google-description">
-              See what our patients are saying about their experience with Myers
+              See what our patients are saying about their experience with SPARK
               Orthodontics
             </p>
           </div>
@@ -135,7 +135,7 @@ export function createReviewsPage() {
                 <span class="google-rating-score">4.9/5</span>
               </div>
               <a 
-                href="https://www.google.com/search?q=myers+orthodontics" 
+                href="https://www.google.com/search?q=spark+orthodontics" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="reviews-google-link"
@@ -154,7 +154,7 @@ export function createReviewsPage() {
             Ready to Join Our Happy Patients?
           </h2>
           <p class="reviews-cta-description">
-            Experience the Myers Orthodontics difference for yourself. Schedule
+            Experience the SPARK Orthodontics difference for yourself. Schedule
             your free consultation today.
           </p>
           <a href="/schedule" class="reviews-cta-button" data-route="/schedule">

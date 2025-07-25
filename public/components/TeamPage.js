@@ -122,7 +122,7 @@ export function createTeamPage() {
               </div>
             </div>
             <div class="education-image-wrapper">
-              <img src="/images/myers_education_training.png" alt="Myers Orthodontics team during training session" class="education-image" />
+              <img src="/images/myers_education_training.png" alt="SPARK Orthodontics team during training session" class="education-image" />
             </div>
           </div>
         </div>

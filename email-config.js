@@ -17,7 +17,7 @@ const createTransporter = () => {
 // Email templates
 const emailTemplates = {
   contact: {
-    subject: 'New Contact Form Submission - Myers Orthodontics',
+    subject: 'New Contact Form Submission - SPARK Orthodontics',
     getHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -37,7 +37,7 @@ const emailTemplates = {
         <div class="container">
           <div class="header">
             <h1>New Contact Form Submission</h1>
-            <p>Myers Orthodontics</p>
+            <p>SPARK Orthodontics</p>
           </div>
           <div class="content">
             <div class="info-row">
@@ -66,13 +66,13 @@ const emailTemplates = {
             </div>
           </div>
           <div class="footer">
-            <p>This message was sent from the Myers Orthodontics contact form.</p>
+            <p>This message was sent from the SPARK Orthodontics contact form.</p>
           </div>
         </div>
       </body>
       </html>
     `,
-    confirmationSubject: 'Thank you for contacting Myers Orthodontics',
+    confirmationSubject: 'Thank you for contacting SPARK Orthodontics',
     getConfirmationHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -95,23 +95,23 @@ const emailTemplates = {
           </div>
           <div class="content">
             <p>Dear ${data.firstName},</p>
-            <p>Thank you for contacting Myers Orthodontics. We have successfully received your message and will respond within 1 business day.</p>
+            <p>Thank you for contacting SPARK Orthodontics. We have successfully received your message and will respond within 1 business day.</p>
             
             <div class="contact-info">
               <h3>Contact Information</h3>
-              <p><strong>Phone:</strong> (317) 289-1750</p>
-              <p><strong>Email:</strong> info@myersortho.com</p>
-              <p><strong>Address:</strong> 123 Main Street, Indianapolis, IN 46240</p>
+              <p><strong>Phone:</strong> (951) 555-0123</p>
+              <p><strong>Email:</strong> info@sparkortho.com</p>
+              <p><strong>Address:</strong> 1234 Sunshine Blvd, STE 300, Riverside, CA 92501-1234</p>
             </div>
             
             <p>If you have an urgent dental concern, please call our office directly.</p>
             <p>We look forward to helping you achieve your perfect smile!</p>
             
             <p>Best regards,<br>
-            The Myers Orthodontics Team</p>
+            The SPARK Orthodontics Team</p>
           </div>
           <div class="footer">
-            <p>Myers Orthodontics | Creating Beautiful Smiles</p>
+            <p>SPARK Orthodontics | Creating Beautiful Smiles</p>
           </div>
         </div>
       </body>
@@ -120,7 +120,7 @@ const emailTemplates = {
   },
 
   referral: {
-    subject: 'New Patient Referral - Myers Orthodontics',
+    subject: 'New Patient Referral - SPARK Orthodontics',
     getHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -143,7 +143,7 @@ const emailTemplates = {
         <div class="container">
           <div class="header">
             <h1>New Patient Referral</h1>
-            <p>Myers Orthodontics</p>
+            <p>SPARK Orthodontics</p>
           </div>
           <div class="content">
             ${data.urgency === 'emergency' || data.urgency === 'urgent' ?
@@ -221,13 +221,13 @@ const emailTemplates = {
             </div>
           </div>
           <div class="footer">
-            <p>This referral was submitted through the Myers Orthodontics referral form.</p>
+            <p>This referral was submitted through the SPARK Orthodontics referral form.</p>
           </div>
         </div>
       </body>
       </html>
     `,
-    confirmationSubject: 'Referral Submitted Successfully - Myers Orthodontics',
+    confirmationSubject: 'Referral Submitted Successfully - SPARK Orthodontics',
     getConfirmationHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -250,7 +250,7 @@ const emailTemplates = {
           </div>
           <div class="content">
             <p>Dear Dr. ${data.doctorName.split(' ').pop()},</p>
-            <p>Thank you for referring <strong>${data.patientFirstName} ${data.patientLastName}</strong> to Myers Orthodontics.</p>
+            <p>Thank you for referring <strong>${data.patientFirstName} ${data.patientLastName}</strong> to SPARK Orthodontics.</p>
             
             <div class="referral-summary">
               <h3>Referral Summary</h3>
@@ -266,13 +266,13 @@ const emailTemplates = {
               <li>A consultation report will be sent to you after the patient's visit</li>
             </ul>
             
-            <p>Thank you for trusting Myers Orthodontics with your patient's care.</p>
+            <p>Thank you for trusting SPARK Orthodontics with your patient's care.</p>
             
             <p>Best regards,<br>
-            Dr. Myers and Team</p>
+            Dr. McFly and Team</p>
           </div>
           <div class="footer">
-            <p>Myers Orthodontics | Professional Referral Network</p>
+            <p>SPARK Orthodontics | Professional Referral Network</p>
           </div>
         </div>
       </body>
@@ -281,7 +281,7 @@ const emailTemplates = {
   },
 
   schedule: {
-    subject: 'New Appointment Request - Myers Orthodontics',
+    subject: 'New Appointment Request - SPARK Orthodontics',
     getHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -302,7 +302,7 @@ const emailTemplates = {
         <div class="container">
           <div class="header">
             <h1>New Appointment Request</h1>
-            <p>Myers Orthodontics</p>
+            <p>SPARK Orthodontics</p>
           </div>
           <div class="content">
             <div class="info-row">
@@ -348,13 +348,13 @@ const emailTemplates = {
             </div>
           </div>
           <div class="footer">
-            <p>This appointment request was submitted through the Myers Orthodontics website.</p>
+            <p>This appointment request was submitted through the SPARK Orthodontics website.</p>
           </div>
         </div>
       </body>
       </html>
     `,
-    confirmationSubject: 'Myers Orthodontics - Appointment Request Received',
+    confirmationSubject: 'SPARK Orthodontics - Appointment Request Received',
     getConfirmationHtml: (data) => `
       <!DOCTYPE html>
       <html>
@@ -379,7 +379,7 @@ const emailTemplates = {
           </div>
           <div class="content">
             <p>Dear ${data.firstName},</p>
-            <p>Thank you for your appointment request with Myers Orthodontics. We have received your information and will contact you within 1 business day to confirm your appointment time.</p>
+            <p>Thank you for your appointment request with SPARK Orthodontics. We have received your information and will contact you within 1 business day to confirm your appointment time.</p>
             
             <div class="priority-note">
               <strong>⏰ Quick Response Guaranteed</strong><br>
@@ -397,21 +397,21 @@ const emailTemplates = {
             
             <div class="contact-info">
               <h3>Need to Reach Us?</h3>
-              <p><strong>Phone:</strong> (317) 289-1750</p>
-              <p><strong>Email:</strong> info@myersortho.com</p>
-              <p><strong>Address:</strong> 123 Main Street, Indianapolis, IN 46240</p>
+              <p><strong>Phone:</strong> (951) 555-0123</p>
+              <p><strong>Email:</strong> info@sparkortho.com</p>
+              <p><strong>Address:</strong> 1234 Sunshine Blvd, STE 300, Riverside, CA 92501-1234</p>
               <p style="margin-top: 10px; font-size: 14px; color: #666;">
                 <em>If you need to make changes to your request or have urgent questions, please call us directly.</em>
               </p>
             </div>
             
-            <p>We appreciate you choosing Myers Orthodontics for your orthodontic care and look forward to seeing you soon.</p>
+            <p>We appreciate you choosing SPARK Orthodontics for your orthodontic care and look forward to seeing you soon.</p>
             
             <p>Best regards,<br>
-            The Myers Orthodontics Team</p>
+            The SPARK Orthodontics Team</p>
           </div>
           <div class="footer">
-            <p>Myers Orthodontics | Excellence in Orthodontic Care</p>
+            <p>SPARK Orthodontics | Excellence in Orthodontic Care</p>
           </div>
         </div>
       </body>
