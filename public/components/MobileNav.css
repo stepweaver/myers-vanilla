@@ -63,7 +63,7 @@
   gap: 0.75rem;
 }
 
-.logo-text {
+.mobile-nav-logo .logo {
   font-family: var(--font-montserrat);
   font-weight: 800;
   font-size: 1.5rem;

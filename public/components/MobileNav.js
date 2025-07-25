@@ -48,7 +48,7 @@ export function createMobileNav() {
         <!-- Header -->
         <div class="mobile-nav-header">
           <div class="mobile-nav-logo">
-            <div class="logo-text">L | O</div>
+            ${createLogo('mobile-nav-logo')}
             <a href="/" class="brand-text" data-route="/">
               Lambda Orthodontics
             </a>
