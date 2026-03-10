@@ -111,7 +111,7 @@ myers-vanilla/
 
 ## Demo Site Notice
 
-This is a **demo website** created to showcase web development skills. All forms are demo-only: no submissions are sent, stored, or processed. Forms are for UI/UX demonstration only. A demo notice is displayed in the footer.
+This is a **demo website** created to showcase web development skills. All forms—including contact, schedule, referral, job applications, patient portal login, and newsletter—are demo-only: no submissions are sent, stored, or processed. Forms are for UI/UX demonstration only. A demo notice is displayed in the footer.
 
 ## Technologies Used
 
@@ -126,6 +126,7 @@ This is a **demo website** created to showcase web development skills. All forms
 - **Client-side router**: SPA-style routing via `Router.js` with `pushState` and `popstate` (hash-free)
 - **Modular components**: Each page/section is a component with `create*` and `init*` functions
 - **Component structure**: Layout, navbar, footer, and page-specific components in `public/components/`
+- **Centralised data**: `siteData.js` holds contact details, treatment descriptions, process steps, job listings, and other content; components import what they need, so content updates do not require changes to component logic
 
 ## Development
 
@@ -135,4 +136,4 @@ This is a **demo website** created to showcase web development skills. All forms
 
 ## License
 
-This is a demo project created for portfolio purposes.
+This is a demo project created for portfolio purposes. It illustrates front-end skills and could serve as a foundation for a fully functional web application.
