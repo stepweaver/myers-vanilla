@@ -5,7 +5,7 @@ A modern, responsive demo website for Lambda Orthodontics built with vanilla Jav
 ## Features
 
 - 📱 Responsive design with modern UI/UX
-- 📝 Demo contact, referral, and appointment scheduling forms
+- 📝 Non-functional demo forms (contact, referral, schedule, job applications, patient portal, newsletter)
 - 🎨 Clean, professional design matching the orthodontic practice brand
 - ⚡ Fast loading with vanilla JavaScript (no heavy frameworks)
 - 📝 Form validation and user feedback
@@ -13,19 +13,30 @@ A modern, responsive demo website for Lambda Orthodontics built with vanilla Jav
 
 ## Demo Forms
 
-The website includes three fully functional demo forms:
+The website includes six non-functional demo forms for UI/UX demonstration:
 
-1. **Contact Form** - General inquiries with demo success messages
-2. **Referral Form** - Professional referral submissions for dentists
-3. **Schedule Consultation Form** - Appointment requests with demo success messages
+1. **Contact Form** - General inquiries (Contact page)
+2. **Referral Form** - Professional patient referrals (Referrals page)
+3. **Schedule Consultation Form** - Appointment requests (Schedule page)
+4. **Job Application Form** - Per-position applications (Careers job detail pages)
+5. **Patient Portal Forms** - Login, forgot password, and create account (Patient Portal page)
+6. **Newsletter Form** - Email subscription (Homepage footer)
 
-Each form:
+Each form validates input, shows loading states, displays success messages, and logs submissions to the console. No data is sent or stored.
 
-- ✅ Validates user input
-- ✅ Shows loading states
-- ✅ Displays success messages
-- ✅ Logs submissions to console
-- ✅ Resets after successful submission
+## Site Structure
+
+- **Home** (`/`)
+- **About** (`/about`)
+- **Treatments** (`/treatments`), with dynamic detail pages (`/treatments/:slug`)
+- **Process** (`/process`)
+- **Schedule** (`/schedule`)
+- **Reviews** (`/reviews`)
+- **Team** (`/team`)
+- **Careers** (`/careers`), with dynamic job detail pages (`/careers/:slug`)
+- **Contact** (`/contact`)
+- **Patient Portal** (`/patient-portal`)
+- **Referrals** (`/referrals`)
 
 ## Prerequisites
 
@@ -80,21 +91,27 @@ Each form:
 
 ```
 myers-vanilla/
-├── app.js                 # Express server entry point
-├── package.json           # Dependencies and scripts
-├── public/               # Static files
-│   ├── index.html        # Main HTML file
-│   ├── main.js           # JavaScript entry point
-│   ├── siteData.js       # Site content data
-│   ├── styles.css        # Global styles
-│   ├── components/       # React-like components
-│   └── images/           # Image assets
-└── .gitignore           # Git ignore rules
+├── app.js                    # Express server
+├── package.json              # Dependencies and scripts
+├── public/
+│   ├── index.html            # Main HTML file
+│   ├── main.js               # App entry, mounts Layout + Router
+│   ├── Router.js             # Client-side SPA router
+│   ├── siteData.js           # Content data
+│   ├── styles.css            # Global styles
+│   ├── components/           # Modular page/section components
+│   │   ├── Layout.js
+│   │   ├── Navbar.js, Footer.js
+│   │   ├── ContactForm.js, ReferralForm.js
+│   │   ├── *Page.js
+│   │   └── *.css
+│   └── images/               # Image assets
+└── .gitignore
 ```
 
 ## Demo Site Notice
 
-This is a **demo website** created to showcase web development skills. The forms are for demonstration purposes only and will not send actual emails. A demo notice is displayed in the footer.
+This is a **demo website** created to showcase web development skills. All forms are demo-only: no submissions are sent, stored, or processed. Forms are for UI/UX demonstration only. A demo notice is displayed in the footer.
 
 ## Technologies Used
 
@@ -103,6 +120,12 @@ This is a **demo website** created to showcase web development skills. The forms
 - **Styling**: CSS3 with custom properties
 - **Icons**: Lucide Icons
 - **Deployment**: Railway
+
+### Architecture
+
+- **Client-side router**: SPA-style routing via `Router.js` with `pushState` and `popstate` (hash-free)
+- **Modular components**: Each page/section is a component with `create*` and `init*` functions
+- **Component structure**: Layout, navbar, footer, and page-specific components in `public/components/`
 
 ## Development
 
