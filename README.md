@@ -2,6 +2,10 @@
 
 A modern, responsive demo website for Lambda Orthodontics built with vanilla JavaScript and Express.js.
 
+## Live Demo
+
+- **URL**: [lambdaortho.vercel.app](https://lambdaortho.vercel.app)
+
 ## Features
 
 - 📱 Responsive design with modern UI/UX
@@ -10,6 +14,16 @@ A modern, responsive demo website for Lambda Orthodontics built with vanilla Jav
 - ⚡ Fast loading with vanilla JavaScript (no heavy frameworks)
 - 📝 Form validation and user feedback
 - 🚀 Demo functionality - forms log submissions and show success messages
+
+## How It Works
+
+This project is a vanilla JavaScript single-page application (SPA) served by a lightweight Express backend:
+
+- The Express server serves static assets from `public/` and exposes JSON APIs:
+  - `GET /api/sitedata` returns the centralised `siteData.js` content (treatments, process steps, jobs, contact info, etc.).
+  - `POST /api/contact`, `POST /api/referral`, and `POST /api/schedule` are demo-only endpoints that log form submissions and return JSON success responses.
+- On the frontend, a custom client-side router in `Router.js` maps routes to page components and handles browser history and scroll restoration.
+- Content is centralised in `siteData.js`, which components import so content changes rarely require updates to component logic.
 
 ## Demo Forms
 
@@ -119,7 +133,14 @@ This is a **demo website** created to showcase web development skills. All forms
 - **Frontend**: Vanilla JavaScript (ES6 modules)
 - **Styling**: CSS3 with custom properties
 - **Icons**: Lucide Icons
-- **Deployment**: Railway
+- **Deployment**: Vercel for the live demo, deployable to Railway or any Node-compatible host
+
+## Screenshots
+
+Add your preferred screenshots or GIFs here to visually showcase the project, for example:
+
+![Homepage](./public/images/readme-home.png)
+![Treatment detail page](./public/images/readme-treatment-detail.png)
 
 ### Architecture
 
