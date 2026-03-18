@@ -1,160 +1,126 @@
 # Lambda Orthodontics Website - Demo
 
-A modern, responsive demo website for Lambda Orthodontics built with vanilla JavaScript and Express.js.
+A modern orthodontics practice demo built as a vanilla JavaScript single-page application with a lightweight Express server.
 
 ## Live Demo
 
 - **URL**: [lambdaortho.vercel.app](https://lambdaortho.vercel.app)
 
+## What This Project Is
+
+Lambda Orthodontics is a front-end-heavy demo website designed to feel like a polished practice site without pretending to be a production healthcare platform.
+
+It uses:
+
+- a custom client-side router
+- modular page and section components
+- centralized content in `siteData.js`
+- a thin Express server for static hosting and a few demo JSON endpoints
+
+This repo is best understood as a frameworkless SPA architecture project, not a full patient platform.
+
 ## Features
 
-- 📱 Responsive design with modern UI/UX
-- 📝 Non-functional demo forms (contact, referral, schedule, job applications, patient portal, newsletter)
-- 🎨 Clean, professional design matching the orthodontic practice brand
-- ⚡ Fast loading with vanilla JavaScript (no heavy frameworks)
-- 📝 Form validation and user feedback
-- 🚀 Demo functionality - forms log submissions and show success messages
+- Responsive orthodontics website with multi-page SPA navigation
+- Custom client-side routing with browser history support
+- Dynamic treatment detail pages
+- Dynamic careers detail pages
+- Centralized content model in `siteData.js`
+- API-backed demo forms for contact, referrals, and scheduling
+- Client-simulated UI flows for job applications, newsletter signup, and patient portal interactions
+- Clean, lightweight front end built without React or another UI framework
 
-## How It Works
+## Architecture
 
-This project is a vanilla JavaScript single-page application (SPA) served by a lightweight Express backend:
+This project is a vanilla JavaScript SPA served by a lightweight Express backend.
 
-- The Express server serves static assets from `public/` and exposes JSON APIs:
-  - `GET /api/sitedata` returns the centralised `siteData.js` content (treatments, process steps, jobs, contact info, etc.).
-  - `POST /api/contact`, `POST /api/referral`, and `POST /api/schedule` are demo-only endpoints that log form submissions and return JSON success responses.
-- On the frontend, a custom client-side router in `Router.js` maps routes to page components and handles browser history and scroll restoration.
-- Content is centralised in `siteData.js`, which components import so content changes rarely require updates to component logic.
+### Backend
 
-## Demo Forms
+`app.js` is intentionally small. It:
 
-The website includes six non-functional demo forms for UI/UX demonstration:
+- serves static assets from `public/`
+- exposes a few demo JSON endpoints
+- falls back to `index.html` for non-API routes so SPA deep links work on refresh
 
-1. **Contact Form** - General inquiries (Contact page)
-2. **Referral Form** - Professional patient referrals (Referrals page)
-3. **Schedule Consultation Form** - Appointment requests (Schedule page)
-4. **Job Application Form** - Per-position applications (Careers job detail pages)
-5. **Patient Portal Forms** - Login, forgot password, and create account (Patient Portal page)
-6. **Newsletter Form** - Email subscription (Homepage footer)
+Available endpoints:
 
-Each form validates input, shows loading states, displays success messages, and logs submissions to the console. No data is sent or stored.
+- `GET /api/sitedata`
+- `POST /api/contact`
+- `POST /api/referral`
+- `POST /api/schedule`
+
+These endpoints are demo-only. They return success responses without persistent storage.
+
+### Frontend
+
+The frontend is structured around a persistent layout shell plus route-level rendering:
+
+- `public/main.js` boots the app
+- `public/components/Layout.js` renders the persistent shell
+- `public/Router.js` handles navigation, route matching, browser history, and scroll restoration
+- `public/siteData.js` centralizes content used across the site
+
+This keeps layout concerns, route logic, and page content separated instead of collapsing everything into one large script.
+
+## Interactive Flows
+
+Not every interaction in this project is implemented the same way. That distinction matters.
+
+### API-backed demo flows
+
+These submit JSON to Express demo endpoints:
+
+1. **Contact Form** - General inquiries
+2. **Referral Form** - Professional referrals
+3. **Schedule Consultation Form** - Appointment requests
+
+These flows are demo-only. They do not persist data.
+
+### Client-simulated interactions
+
+These are front-end demo interactions used to prototype UX patterns:
+
+4. **Job Application Form** - Career detail pages
+5. **Patient Portal UI** - Login, forgot password, create account
+6. **Newsletter Form** - Homepage/footer subscription UI
+
+These interactions are intentionally simulated and do not connect to a production backend.
 
 ## Site Structure
 
 - **Home** (`/`)
 - **About** (`/about`)
-- **Treatments** (`/treatments`), with dynamic detail pages (`/treatments/:slug`)
+- **Treatments** (`/treatments`)
+- **Treatment Detail** (`/treatments/:slug`)
 - **Process** (`/process`)
 - **Schedule** (`/schedule`)
 - **Reviews** (`/reviews`)
 - **Team** (`/team`)
-- **Careers** (`/careers`), with dynamic job detail pages (`/careers/:slug`)
+- **Careers** (`/careers`)
+- **Career Detail** (`/careers/:slug`)
 - **Contact** (`/contact`)
 - **Patient Portal** (`/patient-portal`)
 - **Referrals** (`/referrals`)
 
-## Prerequisites
-
-- Node.js (v16 or higher)
-- npm or yarn
-
-## Local Development
-
-1. **Clone the repository**
-
-   ```bash
-   git clone <repository-url>
-   cd myers-vanilla
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Visit the website**
-   ```
-   http://localhost:3000
-   ```
-
-## Deployment
-
-### Railway (Recommended)
-
-1. **Go to [railway.app](https://railway.app)**
-2. **Sign up with GitHub**
-3. **Click "New Project"**
-4. **Select "Deploy from GitHub repo"**
-5. **Select your repository**
-6. **Railway will auto-detect it's a Node.js app**
-7. **Deploy!**
-
-### Alternative Platforms
-
-- **Render**: [render.com](https://render.com)
-- **Heroku**: [heroku.com](https://heroku.com)
-- **DigitalOcean App Platform**: [digitalocean.com](https://digitalocean.com)
-
 ## Project Structure
 
-```
+```text
 myers-vanilla/
 ├── app.js                    # Express server
-├── package.json              # Dependencies and scripts
+├── package.json             # Dependencies and scripts
 ├── public/
-│   ├── index.html            # Main HTML file
-│   ├── main.js               # App entry, mounts Layout + Router
-│   ├── Router.js             # Client-side SPA router
-│   ├── siteData.js           # Content data
-│   ├── styles.css            # Global styles
-│   ├── components/           # Modular page/section components
+│   ├── index.html           # Main HTML entry
+│   ├── main.js              # App bootstrap
+│   ├── Router.js            # Client-side SPA router
+│   ├── siteData.js          # Centralized content/data
+│   ├── styles.css           # Global styles
+│   ├── components/          # Page and section modules
 │   │   ├── Layout.js
-│   │   ├── Navbar.js, Footer.js
-│   │   ├── ContactForm.js, ReferralForm.js
+│   │   ├── Navbar.js
+│   │   ├── Footer.js
+│   │   ├── ContactForm.js
+│   │   ├── ReferralForm.js
 │   │   ├── *Page.js
 │   │   └── *.css
-│   └── images/               # Image assets
+│   └── images/              # Static image assets
 └── .gitignore
-```
-
-## Demo Site Notice
-
-This is a **demo website** created to showcase web development skills. All forms—including contact, schedule, referral, job applications, patient portal login, and newsletter—are demo-only: no submissions are sent, stored, or processed. Forms are for UI/UX demonstration only. A demo notice is displayed in the footer.
-
-## Technologies Used
-
-- **Backend**: Node.js, Express.js
-- **Frontend**: Vanilla JavaScript (ES6 modules)
-- **Styling**: CSS3 with custom properties
-- **Icons**: Lucide Icons
-- **Deployment**: Vercel for the live demo, deployable to Railway or any Node-compatible host
-
-## Screenshots
-
-Add your preferred screenshots or GIFs here to visually showcase the project, for example:
-
-![Homepage](./public/images/readme-home.png)
-![Treatment detail page](./public/images/readme-treatment-detail.png)
-
-### Architecture
-
-- **Client-side router**: SPA-style routing via `Router.js` with `pushState` and `popstate` (hash-free)
-- **Modular components**: Each page/section is a component with `create*` and `init*` functions
-- **Component structure**: Layout, navbar, footer, and page-specific components in `public/components/`
-- **Centralised data**: `siteData.js` holds contact details, treatment descriptions, process steps, job listings, and other content; components import what they need, so content updates do not require changes to component logic
-
-## Development
-
-- **Start development server**: `npm run dev`
-- **Start production server**: `npm start`
-- **Port**: 3000 (configurable via PORT environment variable)
-
-## License
-
-This is a demo project created for portfolio purposes. It illustrates front-end skills and could serve as a foundation for a fully functional web application.
